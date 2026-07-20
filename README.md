@@ -28,4 +28,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0116-populating-next-right-pointers-in-each-node](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0116-populating-next-right-pointers-in-each-node) |
 | [0117-populating-next-right-pointers-in-each-node-ii](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0117-populating-next-right-pointers-in-each-node-ii) |
+## Array
+|  |
+| ------- |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+## Math
+|  |
+| ------- |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 <!---LeetCode Topics End-->
