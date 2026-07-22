@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0268-missing-number) |
+| [0283-move-zeroes](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0283-move-zeroes) |
 | [0704-binary-search](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0704-binary-search) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Math
@@ -56,4 +57,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0268-missing-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0283-move-zeroes](https://github.com/gurunathan1234a-png/daily-leetcode-challenge/tree/master/0283-move-zeroes) |
 <!---LeetCode Topics End-->
