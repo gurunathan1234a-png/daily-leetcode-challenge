@@ -1,0 +1,49 @@
+class Solution {
+    List<Integer> ans = new ArrayList<>();
+    public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {
+        int[] map = new int[101];
+        for(int i =0 ; i < voyage.length; i++ ){
+            map[voyage[i]] = i;
+        }
+        if(traverse(voyage, map, root, 0, voyage.length-1))return ans;
+        else return Arrays.asList(-1);
+    }
+
+    private boolean traverse(int[] voyage, int[] map, TreeNode root, int start, int end){
+        if(end-start == 0){
+            if(root.val == voyage[start])return true;
+            else return false;
+        }
+        if(root.left == null && root.right == null && end-start!= 0)return false;
+
+        if(root.val != voyage[start])return false;
+
+        boolean isSwapped = false;
+        if(root.right != null && root.left!=null && map[root.right.val] < map[root.left.val]){
+            ans.add(root.val);
+            isSwapped = true;
+        }
+        int minInd = Math.min( 
+            root.right!=null?map[root.right.val]:1000, 
+            root.left!=null?map[root.left.val]:1000 );
+        if( minInd != start+1 )return false;
+
+        if(
+            root.left==null  
+        ){
+            return traverse(voyage, map, root.right, map[root.right.val], end);
+        }
+        else if(
+            root.right==null  
+        ){
+            return traverse(voyage, map, root.left, map[root.left.val], end);
+        }else{
+            return traverse(voyage, map, root.left, map[root.left.val], isSwapped?end:map[root.right.val]-1) && 
+            traverse(voyage, map, root.right, map[root.right.val], isSwapped?map[root.left.val]-1:end);
+        }
+    }
+
+    private void log(String s){
+        System.out.println(s);
+    }
+}
