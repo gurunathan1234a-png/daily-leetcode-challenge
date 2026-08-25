@@ -1,0 +1,15 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int ones = 0, twos = 0;
+        
+        for (int num : nums) {
+            // Update 'ones' with bits that appear 1st time, excluding those in 'twos'
+            ones = (ones ^ num) & ~twos;
+            
+            // Update 'twos' with bits that appear 2nd time, excluding those in 'ones'
+            twos = (twos ^ num) & ~ones;
+        }
+        
+        return ones;
+    }
+}
